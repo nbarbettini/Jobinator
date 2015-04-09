@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobinator.API", "Jobinator.API\Jobinator.API.csproj", "{BDD021FE-E7A4-492D-AFF9-BAA90BE38AA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobinator.API.Tests", "C:\Users\nate.barbettini\Documents\Visual Studio 2013\Projects\Jobinator.API\Jobinator.API.Tests\Jobinator.API.Tests.csproj", "{7356C280-F429-4AB1-9137-CAB7C1BF1EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobinator.Core", "Jobinator.Core\Jobinator.Core.csproj", "{2F05FD4E-190C-4A03-BD20-A29FFE1CDA6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobinator.Core.Tests", "Jobinator.Core.Tests\Jobinator.Core.Tests.csproj", "{971E2CB9-10DF-4302-BAEB-86BFCC32CE1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jobinator.Web", "Jobinator.Web\Jobinator.Web.csproj", "{F5B91D3E-4AF0-4879-A6A2-C4E3298A38EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDD021FE-E7A4-492D-AFF9-BAA90BE38AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD021FE-E7A4-492D-AFF9-BAA90BE38AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD021FE-E7A4-492D-AFF9-BAA90BE38AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD021FE-E7A4-492D-AFF9-BAA90BE38AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7356C280-F429-4AB1-9137-CAB7C1BF1EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7356C280-F429-4AB1-9137-CAB7C1BF1EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7356C280-F429-4AB1-9137-CAB7C1BF1EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7356C280-F429-4AB1-9137-CAB7C1BF1EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F05FD4E-190C-4A03-BD20-A29FFE1CDA6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F05FD4E-190C-4A03-BD20-A29FFE1CDA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F05FD4E-190C-4A03-BD20-A29FFE1CDA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F05FD4E-190C-4A03-BD20-A29FFE1CDA6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971E2CB9-10DF-4302-BAEB-86BFCC32CE1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971E2CB9-10DF-4302-BAEB-86BFCC32CE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971E2CB9-10DF-4302-BAEB-86BFCC32CE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971E2CB9-10DF-4302-BAEB-86BFCC32CE1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B91D3E-4AF0-4879-A6A2-C4E3298A38EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B91D3E-4AF0-4879-A6A2-C4E3298A38EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B91D3E-4AF0-4879-A6A2-C4E3298A38EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B91D3E-4AF0-4879-A6A2-C4E3298A38EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

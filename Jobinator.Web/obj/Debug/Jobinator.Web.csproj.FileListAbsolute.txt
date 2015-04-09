@@ -1,0 +1,5 @@
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Web\bin\Jobinator.Web.dll.config
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Web\bin\Jobinator.Web.dll
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Web\bin\Jobinator.Web.pdb
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Web\obj\Debug\Jobinator.Web.dll
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Web\obj\Debug\Jobinator.Web.pdb

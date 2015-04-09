@@ -1,0 +1,14 @@
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\Jobinator.Core.dll.config
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\Jobinator.Core.dll
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\Jobinator.Core.pdb
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\Newtonsoft.Json.dll
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\System.Net.Http.Formatting.dll
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\System.Web.Http.dll
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\System.Web.Http.WebHost.dll
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\Newtonsoft.Json.xml
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\System.Net.Http.Formatting.xml
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\System.Web.Http.xml
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\bin\Debug\System.Web.Http.WebHost.xml
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\obj\Debug\Jobinator.Core.dll
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\obj\Debug\Jobinator.Core.pdb
+\\vnc1fs01\users$\Nate.Barbettini\Jobinator\Jobinator.Core\obj\Debug\Jobinator.Core.csprojResolveAssemblyReference.cache
