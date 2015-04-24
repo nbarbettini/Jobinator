@@ -1,7 +1,8 @@
 ﻿'use strict';
-app.factory('authInterceptorService', ['$q', '$location', 'localStorageService', function ($q, $location, localStorageService) {
+app.factory('authInterceptorService', ['$q', '$injector', '$location', 'localStorageService', function ($q, $injector, $location, localStorageService) {
 
     var authInterceptorServiceFactory = {};
+    var $http;
 
     var _request = function (config) {
 
@@ -16,10 +17,33 @@ app.factory('authInterceptorService', ['$q', '$location', 'localStorageService',
     }
 
     var _responseError = function (rejection) {
-        if (rejection.status === 401) {
-            $location.path('/login');
+        var deferred = $q.defer();
+
+        if (rejection.status === 401 &&
+            !rejection.headers['IsRetry']) {
+            var authService = $injector.get('authService');
+            debugger;
+            authService.refreshToken().then(function (response) {
+                _retryHttpRequest(rejection.config, deferred);
+            }, function () {
+                authService.logOut();
+                $location.path('/login');
+                deferred.reject(rejection);
+            })
+        } else {
+            deferred.reject(rejection);
         }
-        return $q.reject(rejection);
+        return deferred.promise;
+    }
+
+    var _retryHttpRequest = function (config, deferred) {
+        $http = $http || $injector.get('$http');
+        config.headers['IsRetry'] = "1";
+        $http(config).then(function (response) {
+            deferred.resolve(resposne);
+        }, function (response) {
+            deferred.reject(response);
+        });
     }
 
     authInterceptorServiceFactory.request = _request;

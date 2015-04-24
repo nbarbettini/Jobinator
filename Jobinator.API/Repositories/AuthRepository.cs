@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Jobinator.API.Models;
+using MongoDB.Driver;
 
 namespace Jobinator.API.Repositories
 {
@@ -37,6 +39,68 @@ namespace Jobinator.API.Repositories
             IdentityUser user = await _userManager.FindAsync(userName, password);
 
             return user;
+        }
+
+        public async Task<Client> FindClient(string clientId)
+        {
+            var client = await _ctx.Clients
+                .Find(x => x.IdName == clientId)
+                .SingleOrDefaultAsync();
+
+            return client;
+        }
+
+        public async Task<bool> AddRefreshToken(RefreshToken token)
+        {
+
+            var existingToken = await _ctx.RefreshTokens
+                .Find(r => r.Subject == token.Subject && r.ClientId == token.ClientId)
+                .SingleOrDefaultAsync();
+
+            if (existingToken != null)
+            {
+                var result = await RemoveRefreshToken(existingToken);
+            }
+
+            await _ctx.RefreshTokens.InsertOneAsync(token);
+
+            return true;
+        }
+
+        public async Task<bool> RemoveRefreshToken(string refreshTokenId)
+        {
+            var refreshToken = await _ctx.RefreshTokens
+                .Find(x => x.Id == refreshTokenId)
+                .SingleOrDefaultAsync();
+
+            if (refreshToken != null)
+            {
+                var result = await _ctx.RefreshTokens.DeleteOneAsync(x => x.Id == refreshToken.Id);
+                return (result.IsAcknowledged && result.DeletedCount > 0);
+            }
+
+            return false;
+        }
+
+        public async Task<bool> RemoveRefreshToken(RefreshToken refreshToken)
+        {
+            return await RemoveRefreshToken(refreshToken.Id);
+        }
+
+        public async Task<RefreshToken> FindRefreshToken(string refreshTokenId)
+        {
+            var refreshToken = await _ctx.RefreshTokens
+                .Find(x => x.Id == refreshTokenId)
+                .SingleOrDefaultAsync();
+
+            return refreshToken;
+        }
+
+        public async Task<List<RefreshToken>> GetAllRefreshTokens()
+        {
+            return await _ctx.RefreshTokens
+                .Find(_ => true)
+                .ToListAsync();
         }
 
         public void Dispose()

@@ -31,6 +31,8 @@ namespace Jobinator.Core.WebApiConfig
             // remove all other content negotiators so we return only JSON
             config.Services.Replace(typeof(IContentNegotiator), new JsonContentNegotiator(jsonFormatter));
 
+            config.Filters.Add(new ServerRetryHeaderFilter());
+
             // Web API routes
             config.MapHttpAttributeRoutes();
             config.Routes.MapHttpRoute(

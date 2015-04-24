@@ -139,16 +139,23 @@
   <ItemGroup>
     <Compile Include="AuthContext.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
+    <Compile Include="Controllers\RefreshTokensController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\TitleController.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Models\ApplicationTypes.cs" />
+    <Compile Include="Models\Client.cs" />
     <Compile Include="Models\IMongoId.cs" />
     <Compile Include="Models\JobTitle.cs" />
     <Compile Include="Models\JobTitleCategorized.cs" />
+    <Compile Include="Models\RefreshToken.cs" />
     <Compile Include="Models\TestModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Vote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\SimpleAuthorizationServerProvider.cs" />
+    <Compile Include="Providers\SimpleRefreshTokenProvider.cs" />
     <Compile Include="Repositories\AuthRepository.cs" />
     <Compile Include="Services\IMongoProvider.cs" />
     <Compile Include="Services\MongoProvider.cs" />

@@ -57,6 +57,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\ordersController.js" />
+    <Content Include="app\controllers\refreshController.js" />
+    <Content Include="app\controllers\tokensManagerController.js" />
+    <Content Include="app\services\ordersService.js" />
+    <Content Include="app\services\tokensManagerService.js" />
+    <Content Include="app\views\orders.html" />
+    <Content Include="app\views\refresh.html" />
+    <Content Include="app\views\tokens.html" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular-route.min.js.map" />
@@ -76,8 +84,8 @@
     <Content Include="app\controllers\signupController.js" />
     <Content Include="app\services\authInterceptorService.js" />
     <Content Include="app\services\authService.js" />
-    <Content Include="Content\flatly-bootstrap.min.css" />
-    <Content Include="Content\loading-bar.min.css" />
+    <Content Include="Content\css\flatly-bootstrap.min.css" />
+    <Content Include="Content\css\loading-bar.min.css" />
     <Content Include="index.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
